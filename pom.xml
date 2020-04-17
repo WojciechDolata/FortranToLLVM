@@ -8,6 +8,14 @@
   <name>fortran-to-llvm</name>
   <url>http://maven.apache.org</url>
   <dependencies>
+    <!-- https://mvnrepository.com/artifact/org.antlr/antlr4-maven-plugin -->
+    <dependency>
+      <groupId>org.antlr</groupId>
+      <artifactId>antlr4</artifactId>
+      <version>4.8</version>
+    </dependency>
+
+
     <dependency>
       <groupId>com.github.julianthome</groupId>
       <artifactId>inmemantlr-api</artifactId>

@@ -10,7 +10,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="fortran-to-llvm" target="1.5" />
+      <module name="fortran-to-llvm" target="10" />
     </bytecodeTargetLevel>
   </component>
 </project>

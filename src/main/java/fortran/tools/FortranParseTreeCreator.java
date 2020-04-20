@@ -1,4 +1,4 @@
-package fortran;
+package fortran.tools;
 
 import org.antlr.v4.runtime.ParserRuleContext;
 import org.snt.inmemantlr.GenericParser;
@@ -8,7 +8,7 @@ import org.snt.inmemantlr.utils.FileUtils;
 
 import java.io.File;
 
-public class ParseTreeCreator {
+public class FortranParseTreeCreator {
 
     private static String lexerPath = "src/main/grammar/Fortran77Lexer.g4";
     private static String parserPath = "src/main/grammar/Fortran77Parser.g4";

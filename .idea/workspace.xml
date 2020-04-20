@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0ebe0e8d-b57a-42d9-9ba8-3904fbe59b75" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/fortran/ParseTreeCreator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/fortran/processor/FortranParseTreeProcessor.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/fortran/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fortran/App.java" afterDir="false" />
     </list>
@@ -29,6 +30,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1586525908110" />
@@ -50,7 +52,7 @@
       <module name="fortran-to-llvm" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="fortran.*" />
+          <option name="PATTERN" value="fortran.tools.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -117,6 +119,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="696" y="323" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1587309436160" />
+    <state x="765" y="229" key="#com.intellij.ide.util.MemberChooser" timestamp="1587404773836">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="765" y="229" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1587404773836" />
     <state x="641" y="445" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1587309417753">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -125,26 +131,30 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="756" y="400" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages/0.0.1920.1040@0.0.1920.1040" timestamp="1587309421282" />
+    <state x="648" y="31" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1587405224559">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="648" y="31" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1587405224559" />
     <state x="585" y="104" key="CommitChangelistDialog2" timestamp="1587311494872">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="585" y="104" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1587311494872" />
-    <state width="1877" height="348" key="GridCell.Tab.0.bottom" timestamp="1587398634194">
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1587404516625">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="348" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1587398634194" />
-    <state width="1877" height="348" key="GridCell.Tab.0.center" timestamp="1587398634194">
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1587404516625" />
+    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1587404516625">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="348" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1587398634194" />
-    <state width="1877" height="348" key="GridCell.Tab.0.left" timestamp="1587398634194">
+    <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1587404516625" />
+    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1587404516625">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="348" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1587398634194" />
-    <state width="1877" height="348" key="GridCell.Tab.0.right" timestamp="1587398634194">
+    <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1587404516624" />
+    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1587404516625">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="348" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1587398634194" />
+    <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1587404516625" />
     <state width="1877" height="348" key="GridCell.Tab.1.bottom" timestamp="1587398643051">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

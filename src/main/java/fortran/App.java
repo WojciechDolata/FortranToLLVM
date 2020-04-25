@@ -1,6 +1,8 @@
 package fortran;
 
-import fortran.tools.FortranParseTreeCreator;
+import fortran.program.statements.ProgramSection;
+import fortran.program.statements.MainProgram;
+import fortran.tools.FPTCreator;
 import org.snt.inmemantlr.tree.ParseTree;
 
 /**
@@ -10,9 +12,10 @@ import org.snt.inmemantlr.tree.ParseTree;
 public class App 
 {
     public static void main( String[] args ) {
-        FortranParseTreeCreator fortranParseTreeCreator = new FortranParseTreeCreator();
-        ParseTree myParseTree = fortranParseTreeCreator.getParseTree("HelloWorld.f");
+        FPTCreator FPTCreator = new FPTCreator();
+        ParseTree myParseTree = FPTCreator.getParseTree("Addition.f");
 
-//        System.out.println(myParseTree.toXml());
+        ProgramSection programSection = new MainProgram(myParseTree.getNodes().get(3));
+        System.out.println(programSection.convert());
     }
 }

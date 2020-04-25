@@ -8,7 +8,7 @@ import org.snt.inmemantlr.utils.FileUtils;
 
 import java.io.File;
 
-public class FortranParseTreeCreator {
+public class FPTCreator {
 
     private static String lexerPath = "src/main/grammar/Fortran77Lexer.g4";
     private static String parserPath = "src/main/grammar/Fortran77Parser.g4";
@@ -26,6 +26,7 @@ public class FortranParseTreeCreator {
             String s = FileUtils.loadFileContent(baseFilePath + fileName);
             gp.setListener(defaultTreeListener);
             gp.compile();
+            var a = gp.getAllCompiledObjects();
 //            ctx = gp.parse(s, "compilationUnit", GenericParser.CaseSensitiveType.NONE);
             ctx = gp.parse(s);
         } catch (Exception ex) {

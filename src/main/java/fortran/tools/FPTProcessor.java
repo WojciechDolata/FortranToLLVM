@@ -1,12 +1,15 @@
 package fortran.tools;
 
+import fortran.program.statements.Assignment;
 import org.snt.inmemantlr.tree.ParseTree;
 import org.snt.inmemantlr.tree.ParseTreeNode;
 import org.snt.inmemantlr.tree.ParseTreeProcessor;
 
-public class FortranParseTreeProcessor extends ParseTreeProcessor<String, String> {
+public class FPTProcessor extends ParseTreeProcessor<String, String> {
 
-    public FortranParseTreeProcessor(ParseTree parseTree) {
+    private StringBuilder output;
+
+    public FPTProcessor(ParseTree parseTree) {
         super(parseTree);
     }
     @Override
@@ -26,6 +29,15 @@ public class FortranParseTreeProcessor extends ParseTreeProcessor<String, String
     // have been already processed
     @Override
     protected void process(ParseTreeNode n) {
+
+        switch (n.getRule()) {
+//            case "expression":
+//                output.append((new Expression()).convert());
+//            case "assignment":
+//                output.append((new Assignment()).convert());
+//                break;
+        }
+
         if(n.getRule().equals("expression")){
             int n0 = Integer.parseInt(smap.get(n.getChild(0)));
             int n1 = Integer.parseInt(smap.get(n.getChild(2)));

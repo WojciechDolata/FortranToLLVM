@@ -10,7 +10,7 @@ public class MainProgram extends ProgramSection {
     }
 
     @Override
-    public String convert() {
-        return programBody.convert();
+    public void process() {
+        programBody.process();
     }
 }

@@ -7,6 +7,19 @@ public class TypeName {
         this.type = type.toLowerCase();
     }
 
+    public String getSize() {
+        switch (type) {
+            case "integer":
+            case "real":
+                return "4";
+            case "double precision":
+                return "8";
+            case "logical":
+                return "1";
+        }
+        return "";
+    }
+
     public String getLLVMType() {
         switch (type) {
             case "integer":

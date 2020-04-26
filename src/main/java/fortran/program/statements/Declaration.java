@@ -27,13 +27,11 @@ public class Declaration extends ProgramSection {
     }
 
     @Override
-    public String convert() {
-        StringBuilder converted = new StringBuilder();
+    public void process() {
         for (String name: names) {
-            converted.append("%").append(name).append(" = alloca ").append(typeName.getLLVMType()).append("\n");
-            parsingProcessor.currentLine++;
-            parsingProcessor.addNewVariable(name, typeName);
+            parsingProcessor.addLine("%" + name + " = alloca " + typeName.getLLVMType() + ", align " + typeName.getSize());
+//            parsingProcessor.currentLine++;
+            parsingProcessor.addNewVariable(name);
         }
-        return converted.toString();
     }
 }

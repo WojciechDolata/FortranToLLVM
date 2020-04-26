@@ -7,7 +7,8 @@
       a = 5
       a = 4
       b = 2
-      a = a + b + a * b
+      a = a + b + 4 + a * b
+      b = a / b + 5
       write(*, '(a)') a
 
       end

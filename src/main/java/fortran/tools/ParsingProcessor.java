@@ -1,19 +1,30 @@
 package fortran.tools;
 
-import fortran.program.helpers.LoadStatement;
 import fortran.program.helpers.TypeName;
 
 import java.util.*;
+import java.util.concurrent.atomic.AtomicReference;
 
 public class ParsingProcessor {
-    public int currentLine = 0;
     private static final ParsingProcessor INSTANCE = new ParsingProcessor();
     private Map<String, Stack<String>> variables = new HashMap<>();
     private Map<String, TypeName> variableType = new HashMap<>();
     private Integer index = 0;
-    private Map<Integer, List<LoadStatement>> loadStatements = new HashMap<>();
+    private Stack<String> program = new Stack<>();
 
-    public void addNewVariable(String key, TypeName type) {
+    public void addLine(String line) {
+        program.push(line);
+    }
+
+    public String getProgram() {
+        StringBuilder stringBuilder = new StringBuilder();
+        for(var line: program) {
+            stringBuilder.append(line).append("\n");
+        }
+        return stringBuilder.toString();
+    }
+
+    public void addNewVariable(String key) {
         if (variables.containsKey(key)) {
             index++;
             variables.get(key).push(index.toString());
@@ -21,6 +32,29 @@ public class ParsingProcessor {
             variables.put(key, new Stack<>());
             variables.get(key).push(key);
         }
+    }
+
+    public String addNewTmp(TypeName typeName) {
+        index++;
+        variables.put(index.toString(), new Stack<>());
+        variables.get(index.toString()).push(index.toString());
+        variableType.put(index.toString(), typeName);
+        return index.toString();
+    }
+
+    public boolean hasVariable(String key) {
+        return variables.containsKey(key);
+    }
+
+    public String findOriginalVariableName(String name) {
+        AtomicReference<String> originalName = new AtomicReference<>();
+        variables.forEach((key, stack) -> {
+            if (stack.contains(name)) originalName.set(key);
+        });
+
+        variables.get(originalName.get()).push(originalName.get());
+
+        return originalName.get();
     }
 
     public void declareNewVariable(String key, TypeName type) {
@@ -45,30 +79,4 @@ public class ParsingProcessor {
     public static ParsingProcessor getInstance() {
         return INSTANCE;
     }
-
-    public void addLoadStatement(LoadStatement loadStatement) {
-        if(loadStatements.containsKey(currentLine)) {
-            loadStatements.get(currentLine).add(loadStatement);
-        } else {
-            var tmpList = new LinkedList<LoadStatement>();
-            tmpList.add(loadStatement);
-            loadStatements.put(currentLine, tmpList);
-        }
-    }
-
-    public String getUpdatedWithLoadStatements(String program) {
-        StringBuilder builder = new StringBuilder();
-        int i = 0;
-        for (var line: program.split("\n")) {
-            if(loadStatements.containsKey(i)) {
-                for( var loadStatement : loadStatements.get(i)) {
-                    builder.append(loadStatement.getLoadStatement());
-                }
-            }
-            builder.append(line).append("\n");
-            i++;
-        }
-        return builder.toString();
-    }
-
 }

@@ -26,11 +26,7 @@ public class ProgramBody extends ProgramSection {
     }
 
     @Override
-    public String convert() {
-        StringBuilder stringBuilder = new StringBuilder();
-        for (var statement: statements) {
-            stringBuilder.append(statement.convert());
-        }
-        return stringBuilder.toString();
+    public void process() {
+        statements.forEach(ProgramSection::process);
     }
 }

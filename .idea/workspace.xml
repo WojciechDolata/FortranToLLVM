@@ -2,26 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0ebe0e8d-b57a-42d9-9ba8-3904fbe59b75" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/examples/Addition.f" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/fortran/expression/BasicExpression.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/fortran/program/helpers/LoadStatement.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/fortran/program/helpers/TypeName.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/fortran/program/statements/Assignment.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/fortran/program/statements/Declaration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/fortran/program/statements/Expression.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/fortran/program/statements/MainProgram.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/fortran/program/statements/ProgramBody.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/fortran/program/statements/ProgramSection.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/fortran/program/statements/VarRef.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/fortran/program/statements/expressions/AEXPR0.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/fortran/tools/FPTVisitor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/fortran/tools/ParsingConverter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/fortran/tools/ParsingProcessor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/fortran/program/helpers/ExpressionCreator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/fortran/program/statements/expressions/AEXPR1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/fortran/program/statements/expressions/ArithmeticExpression.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/examples/HelloWorld.f" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/examples/HelloWorld.f" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/examples/Addition.f" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/examples/Addition.f" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/fortran/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fortran/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/fortran/tools/FortranParseTreeCreator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fortran/tools/FPTCreator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/fortran/tools/FortranParseTreeProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fortran/tools/FPTProcessor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fortran/program/helpers/TypeName.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fortran/program/helpers/TypeName.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fortran/program/statements/Assignment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fortran/program/statements/Assignment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fortran/program/statements/Declaration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fortran/program/statements/Declaration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fortran/program/statements/Expression.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fortran/program/statements/Expression.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fortran/program/statements/MainProgram.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fortran/program/statements/MainProgram.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fortran/program/statements/ProgramBody.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fortran/program/statements/ProgramBody.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fortran/program/statements/ProgramSection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fortran/program/statements/ProgramSection.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fortran/program/statements/VarRef.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fortran/program/statements/VarRef.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fortran/program/statements/expressions/AEXPR0.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fortran/program/statements/expressions/AEXPR0.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fortran/tools/ParsingProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fortran/tools/ParsingProcessor.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -101,7 +97,7 @@
       <workItem from="1587459088083" duration="2108000" />
       <workItem from="1587637226670" duration="597000" />
       <workItem from="1587641626009" duration="6703000" />
-      <workItem from="1587727019321" duration="17449000" />
+      <workItem from="1587727019321" duration="30997000" />
     </task>
     <task id="LOCAL-00001" summary="added gitignore for maven and java">
       <created>1586525482165</created>
@@ -131,7 +127,14 @@
       <option name="project" value="LOCAL" />
       <updated>1587405253374</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Had an idea with adding load statements after whole program was parsed, maybe will come back to it">
+      <created>1587812120041</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1587812120041</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -142,17 +145,18 @@
     <MESSAGE value="Initial commit with imported inmemantlr to pom.xml&#10;to install locally resolve maven dependencies" />
     <MESSAGE value="added grammar files alongside with example f77 program, also now main contains creation of parsing tree" />
     <MESSAGE value="Added processor" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added processor" />
+    <MESSAGE value="Had an idea with adding load statements after whole program was parsed, maybe will come back to it" />
+    <option name="LAST_COMMIT_MESSAGE" value="Had an idea with adding load statements after whole program was parsed, maybe will come back to it" />
   </component>
   <component name="WindowStateProjectService">
     <state x="696" y="323" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1587309436160">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="696" y="323" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1587309436160" />
-    <state x="765" y="229" key="#com.intellij.ide.util.MemberChooser" timestamp="1587810345877">
+    <state x="765" y="229" key="#com.intellij.ide.util.MemberChooser" timestamp="1587894677825">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="765" y="229" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1587810345877" />
+    <state x="765" y="229" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1587894677825" />
     <state x="641" y="445" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1587736596850">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -165,46 +169,50 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="648" y="2" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1587736531249" />
+    <state x="690" y="267" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog" timestamp="1587812370197">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="690" y="267" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1587812370197" />
     <state x="851" y="273" key="#xdebugger.XInspectDialog" timestamp="1587642462365">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="851" y="273" key="#xdebugger.XInspectDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1587642462365" />
-    <state x="585" y="104" key="CommitChangelistDialog2" timestamp="1587405251927">
+    <state x="585" y="104" key="CommitChangelistDialog2" timestamp="1587812117234">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="585" y="104" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1587405251927" />
-    <state width="1877" height="307" key="GridCell.Tab.0.bottom" timestamp="1587808567065">
+    <state x="585" y="104" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1587812117234" />
+    <state width="1877" height="307" key="GridCell.Tab.0.bottom" timestamp="1587899476505">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="307" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1587808567065" />
-    <state width="1877" height="307" key="GridCell.Tab.0.center" timestamp="1587808567065">
+    <state width="1877" height="307" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1587899476505" />
+    <state width="1877" height="307" key="GridCell.Tab.0.center" timestamp="1587899476505">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="307" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1587808567065" />
-    <state width="1877" height="307" key="GridCell.Tab.0.left" timestamp="1587808567065">
+    <state width="1877" height="307" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1587899476505" />
+    <state width="1877" height="307" key="GridCell.Tab.0.left" timestamp="1587899476505">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="307" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1587808567065" />
-    <state width="1877" height="307" key="GridCell.Tab.0.right" timestamp="1587808567065">
+    <state width="1877" height="307" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1587899476505" />
+    <state width="1877" height="307" key="GridCell.Tab.0.right" timestamp="1587899476505">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="307" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1587808567065" />
-    <state width="1877" height="307" key="GridCell.Tab.1.bottom" timestamp="1587808572077">
+    <state width="1877" height="307" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1587899476505" />
+    <state width="1877" height="307" key="GridCell.Tab.1.bottom" timestamp="1587899476506">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="307" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1587808572077" />
-    <state width="1877" height="307" key="GridCell.Tab.1.center" timestamp="1587808572076">
+    <state width="1877" height="307" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1587899476506" />
+    <state width="1877" height="307" key="GridCell.Tab.1.center" timestamp="1587899476505">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="307" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1587808572076" />
-    <state width="1877" height="307" key="GridCell.Tab.1.left" timestamp="1587808572076">
+    <state width="1877" height="307" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1587899476505" />
+    <state width="1877" height="307" key="GridCell.Tab.1.left" timestamp="1587899476505">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="307" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1587808572076" />
-    <state width="1877" height="307" key="GridCell.Tab.1.right" timestamp="1587808572077">
+    <state width="1877" height="307" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1587899476505" />
+    <state width="1877" height="307" key="GridCell.Tab.1.right" timestamp="1587899476506">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="307" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1587808572077" />
+    <state width="1877" height="307" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1587899476506" />
     <state x="490" y="175" key="Maven.ArtifactSearchDialog" timestamp="1587727680037">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -213,10 +221,14 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1587405255532" />
-    <state x="656" y="118" width="607" height="804" key="find.popup" timestamp="1587811283981">
+    <state x="656" y="118" width="607" height="804" key="find.popup" timestamp="1587896799034">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="656" y="118" width="607" height="804" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1587811283981" />
+    <state x="656" y="118" width="607" height="804" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1587896799034" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1587812234219">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1587812234219" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -227,39 +239,24 @@
           <option name="timeStamp" value="8" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/fortran/program/statements/MainProgram.java</url>
-          <line>8</line>
-          <option name="timeStamp" value="9" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/fortran/program/statements/ProgramBody.java</url>
-          <line>11</line>
-          <option name="timeStamp" value="10" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/fortran/App.java</url>
-          <line>18</line>
+          <line>21</line>
           <option name="timeStamp" value="11" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/fortran/program/statements/Expression.java</url>
-          <line>34</line>
-          <option name="timeStamp" value="13" />
+          <url>file://$PROJECT_DIR$/src/main/java/fortran/tools/ParsingProcessor.java</url>
+          <line>64</line>
+          <option name="timeStamp" value="26" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/fortran/program/statements/Expression.java</url>
-          <line>14</line>
-          <option name="timeStamp" value="14" />
+          <url>file://$PROJECT_DIR$/src/main/java/fortran/program/statements/expressions/AEXPR0.java</url>
+          <line>16</line>
+          <option name="timeStamp" value="27" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/fortran/program/statements/Assignment.java</url>
-          <line>11</line>
-          <option name="timeStamp" value="15" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/fortran/program/statements/Expression.java</url>
-          <line>36</line>
-          <option name="timeStamp" value="16" />
+          <url>file://$PROJECT_DIR$/src/main/java/fortran/program/statements/expressions/ArithmeticExpression.java</url>
+          <line>40</line>
+          <option name="timeStamp" value="31" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

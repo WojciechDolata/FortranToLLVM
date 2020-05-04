@@ -7,7 +7,7 @@ import org.snt.inmemantlr.tree.ParseTreeNode;
 
 public class ExpressionCreator {
     public static Expression create(ParseTreeNode n, TypeName typeName) {
-        while (n.getChildren().size() == 1) {
+        while (n.getChildren().size() == 1 && !n.getRule().equals(n.getChild(0).getRule())) {
             n = n.getChild(0);
         }
         switch (n.getRule()) {
@@ -23,6 +23,12 @@ public class ExpressionCreator {
                 return new LogicalConstant(n.getLabel(), typeName);
             case "lexpr0":
                 return new LEXPR0(n, typeName);
+            case "lexpr1":
+                return new LEXPR1(n, typeName);
+            case "lexpr2":
+                return new LEXPR2(n, typeName);
+            case "lexpr3":
+                return new LEXPR3(n, typeName);
             default:
                 return new Expression(typeName);
         }

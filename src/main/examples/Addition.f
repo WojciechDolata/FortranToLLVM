@@ -1,12 +1,9 @@
       implicit none
 
-      integer a, b
-      logical d, e
+      logical d, e, f
       e = .true.
-      a = 2
-      b = 3
-      a = a + b * a
-      d = a .eqv. b
-      write(*, '(a)') a
+      f = .false.
+
+      d = .not. (e .and. f)
 
       end

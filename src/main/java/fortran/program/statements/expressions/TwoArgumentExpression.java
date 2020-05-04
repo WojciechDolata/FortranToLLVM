@@ -10,12 +10,12 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
 
-public class ArithmeticExpression extends Expression {
+public class TwoArgumentExpression extends Expression {
     private List<Expression> expressions = new LinkedList<>();
     private List<String> signs = new LinkedList<>();
     private Map<String,String> operationsMap = new HashMap<>();
 
-    public ArithmeticExpression(ParseTreeNode n, TypeName t, List<String> wantedSigns, List<String> operations) {
+    public TwoArgumentExpression(ParseTreeNode n, TypeName t, List<String> wantedSigns, List<String> operations) {
         super(t);
         for(int i = 0; i < wantedSigns.size(); i++) {
             operationsMap.put(wantedSigns.get(i), operations.get(i));
@@ -23,8 +23,6 @@ public class ArithmeticExpression extends Expression {
         int letfParenthesisCount = 0;
         for(int i = 0; i < n.getLabel().length(); i++) {
             char current = n.getLabel().charAt(i);
-//            char[] pottentialExpr = new char [8];
-//            n.getLabel().getChars(i, n.getLabel().length() - 1, pottentialExpr, 0);
             if(current == '(') {
                 letfParenthesisCount++;
             } else if(current == ')') {
@@ -38,20 +36,6 @@ public class ArithmeticExpression extends Expression {
                     }
                 }
             }
-
-//            String pottentialExpr = String.valueOf(n.getLabel().toCharArray(), i, 10);
-//            for(var currentExprToCheck : wantedSigns) {
-//                if(pottentialExpr.matches(currentExprToCheck + "*")) {
-//                    signs.add(currentExprToCheck);
-//                }
-//            }
-//            if(wantedSigns.contains(String.valueOf(current)) && letfParenthesisCount == 0) {
-////                signs.add(current);
-//            } else if (current == '(') {
-//                letfParenthesisCount++;
-//            } else if (current == ')') {
-//                letfParenthesisCount--;
-//            }
         }
         for(var expr: n.getChildren()) {
             expressions.add(ExpressionCreator.create(expr, t));

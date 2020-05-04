@@ -29,6 +29,8 @@ public class ExpressionCreator {
                 return new LEXPR2(n, typeName);
             case "lexpr3":
                 return new LEXPR3(n, typeName);
+            case "lexpr4":
+                return new LEXPR4(n, typeName);
             default:
                 return new Expression(typeName);
         }

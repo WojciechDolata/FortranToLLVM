@@ -2,17 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0ebe0e8d-b57a-42d9-9ba8-3904fbe59b75" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/fortran/program/statements/expressions/LEXPR1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/fortran/program/statements/expressions/LEXPR2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/fortran/program/statements/expressions/LEXPR3.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/fortran/program/statements/expressions/OneArgumentExpression.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/fortran/program/statements/expressions/LEXPR4.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/examples/Addition.f" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/examples/Addition.f" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/fortran/program/helpers/ExpressionCreator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fortran/program/helpers/ExpressionCreator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/fortran/program/statements/expressions/AEXPR0.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fortran/program/statements/expressions/AEXPR0.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/fortran/program/statements/expressions/AEXPR1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fortran/program/statements/expressions/AEXPR1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/fortran/program/statements/expressions/ArithmeticExpression.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fortran/program/statements/expressions/TwoArgumentExpression.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/fortran/program/statements/expressions/LEXPR0.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fortran/program/statements/expressions/LEXPR0.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -103,7 +94,7 @@
       <workItem from="1588258724221" duration="62000" />
       <workItem from="1588431193737" duration="2915000" />
       <workItem from="1588512018530" duration="2354000" />
-      <workItem from="1588583892725" duration="7904000" />
+      <workItem from="1588583892725" duration="8730000" />
     </task>
     <task id="LOCAL-00001" summary="added gitignore for maven and java">
       <created>1586525482165</created>
@@ -161,7 +152,14 @@
       <option name="project" value="LOCAL" />
       <updated>1588589717669</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Added logical .and., .or. and .not.">
+      <created>1588591931978</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1588591931978</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -176,7 +174,8 @@
     <MESSAGE value="Generating arithmetic expressions works (for integers mostly), should now add type check for other types than integer in AEXPR's" />
     <MESSAGE value="Added logical values declaration" />
     <MESSAGE value="Added logical .eqv. and .neqv." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added logical .eqv. and .neqv." />
+    <MESSAGE value="Added logical .and., .or. and .not." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added logical .and., .or. and .not." />
   </component>
   <component name="WindowStateProjectService">
     <state x="696" y="323" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1587309436160">
@@ -207,26 +206,26 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="851" y="273" key="#xdebugger.XInspectDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1587642462365" />
-    <state x="517" y="116" key="CommitChangelistDialog2" timestamp="1588589715978">
+    <state x="517" y="116" key="CommitChangelistDialog2" timestamp="1588591929946">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="517" y="116" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1588589715978" />
-    <state width="1877" height="527" key="GridCell.Tab.0.bottom" timestamp="1588591896996">
+    <state x="517" y="116" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1588591929946" />
+    <state width="1877" height="316" key="GridCell.Tab.0.bottom" timestamp="1588593978615">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="527" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1588591896996" />
-    <state width="1877" height="527" key="GridCell.Tab.0.center" timestamp="1588591896996">
+    <state width="1877" height="316" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1588593978615" />
+    <state width="1877" height="316" key="GridCell.Tab.0.center" timestamp="1588593978615">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="527" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1588591896996" />
-    <state width="1877" height="527" key="GridCell.Tab.0.left" timestamp="1588591896996">
+    <state width="1877" height="316" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1588593978615" />
+    <state width="1877" height="316" key="GridCell.Tab.0.left" timestamp="1588593978615">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="527" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1588591896996" />
-    <state width="1877" height="527" key="GridCell.Tab.0.right" timestamp="1588591896996">
+    <state width="1877" height="316" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1588593978615" />
+    <state width="1877" height="316" key="GridCell.Tab.0.right" timestamp="1588593978615">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="527" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1588591896996" />
+    <state width="1877" height="316" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1588593978615" />
     <state width="1877" height="386" key="GridCell.Tab.1.bottom" timestamp="1588591574162">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -247,10 +246,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="490" y="175" key="Maven.ArtifactSearchDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1587727680037" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1587900221874">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1588591940118">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1587900221874" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1588591940118" />
     <state x="656" y="118" width="607" height="804" key="find.popup" timestamp="1587896799034">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

@@ -7,6 +7,6 @@ import java.util.Arrays;
 
 public class AEXPR1 extends ArithmeticExpression {
     public AEXPR1(ParseTreeNode n, TypeName t) {
-        super(n, t, "*/", Arrays.asList("mul", "udiv"));
+        super(n, t, Arrays.asList("*", "/"), Arrays.asList("mul", "udiv"));
     }
 }

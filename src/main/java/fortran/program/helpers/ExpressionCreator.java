@@ -21,6 +21,8 @@ public class ExpressionCreator {
 //                return new AEXPR1(n, typeName);
             case "logicalConstant":
                 return new LogicalConstant(n.getLabel(), typeName);
+            case "lexpr0":
+                return new LEXPR0(n, typeName);
             default:
                 return new Expression(typeName);
         }

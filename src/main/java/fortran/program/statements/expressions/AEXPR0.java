@@ -12,6 +12,6 @@ import java.util.List;
 
 public class AEXPR0 extends ArithmeticExpression {
     public AEXPR0(ParseTreeNode n, TypeName t) {
-        super(n, t, "+-", Arrays.asList("add", "sub"));
+        super(n, t, Arrays.asList("+", "-"), Arrays.asList("add", "sub"));
     }
 }

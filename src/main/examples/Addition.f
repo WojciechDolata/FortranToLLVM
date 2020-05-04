@@ -5,7 +5,8 @@
       e = .true.
       a = 2
       b = 3
-      d = a .gt. b .and. e
+      a = a + b * a
+      d = a .eqv. b
       write(*, '(a)') a
 
       end

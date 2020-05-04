@@ -11,13 +11,18 @@ public class ParsingProcessor {
     private Map<String, TypeName> variableType = new HashMap<>();
     private Integer index = 0;
     private Stack<String> program = new Stack<>();
+    private Integer ifCount = 0;
+
+    public Integer addAndGetNewIf() {
+        return ifCount++;
+    }
 
     public void addLine(String line) {
         program.push("\t" + line);
     }
 
-    public void addLabelLine(String line) {
-        program.push(line);
+    public void addLabel(String label) {
+        program.push(label + ":");
     }
 
     public String getProgram() {

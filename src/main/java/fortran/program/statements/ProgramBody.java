@@ -20,6 +20,9 @@ public class ProgramBody extends ProgramSection {
                 case "assignmentStatement":
                     statements.add(new Assignment(child));
                     break;
+                case "ifStatement":
+                    statements.add(new IfStatement(child));
+                    break;
             }
 
         }

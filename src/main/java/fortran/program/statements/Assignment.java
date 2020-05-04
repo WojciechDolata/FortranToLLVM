@@ -1,6 +1,7 @@
 package fortran.program.statements;
 
 import fortran.program.helpers.ExpressionCreator;
+import fortran.program.statements.expressions.VarRef;
 import org.snt.inmemantlr.tree.ParseTreeNode;
 
 public class Assignment extends ProgramSection {

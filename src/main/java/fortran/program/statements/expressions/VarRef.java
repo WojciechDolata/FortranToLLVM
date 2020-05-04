@@ -1,8 +1,9 @@
-package fortran.program.statements;
+package fortran.program.statements.expressions;
 
 import fortran.program.helpers.TypeName;
+import fortran.program.statements.Expression;
 
-public class VarRef extends Expression{
+public class VarRef extends Expression {
     private String value;
     private boolean isConst = false;
 

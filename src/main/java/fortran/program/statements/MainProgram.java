@@ -11,6 +11,8 @@ public class MainProgram extends ProgramSection {
 
     @Override
     public void process() {
+        parsingProcessor.addLine("define i32 @main() {");
         programBody.process();
+        parsingProcessor.addLine("}");
     }
 }

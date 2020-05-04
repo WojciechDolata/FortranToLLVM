@@ -2,21 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0ebe0e8d-b57a-42d9-9ba8-3904fbe59b75" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/fortran/program/helpers/ExpressionCreator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/fortran/program/statements/expressions/AEXPR1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/fortran/program/statements/expressions/ArithmeticExpression.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/fortran/program/statements/expressions/LogicalConstant.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/examples/Addition.f" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/examples/Addition.f" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/fortran/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fortran/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/fortran/program/helpers/TypeName.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fortran/program/helpers/TypeName.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fortran/expression/BasicExpression.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fortran/program/helpers/ExpressionCreator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fortran/program/helpers/ExpressionCreator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/fortran/program/statements/Assignment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fortran/program/statements/Assignment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/fortran/program/statements/Declaration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fortran/program/statements/Declaration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/fortran/program/statements/Expression.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fortran/program/statements/Expression.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/fortran/program/statements/MainProgram.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fortran/program/statements/MainProgram.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/fortran/program/statements/ProgramBody.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fortran/program/statements/ProgramBody.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/fortran/program/statements/ProgramSection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fortran/program/statements/ProgramSection.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/fortran/program/statements/VarRef.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fortran/program/statements/VarRef.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/fortran/program/statements/expressions/AEXPR0.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fortran/program/statements/expressions/AEXPR0.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fortran/program/statements/VarRef.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fortran/program/statements/expressions/VarRef.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/fortran/tools/ParsingProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fortran/tools/ParsingProcessor.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -97,7 +90,15 @@
       <workItem from="1587459088083" duration="2108000" />
       <workItem from="1587637226670" duration="597000" />
       <workItem from="1587641626009" duration="6703000" />
-      <workItem from="1587727019321" duration="30997000" />
+      <workItem from="1587727019321" duration="33109000" />
+      <workItem from="1587930784631" duration="1367000" />
+      <workItem from="1588078023081" duration="354000" />
+      <workItem from="1588151605150" duration="473000" />
+      <workItem from="1588229481237" duration="1218000" />
+      <workItem from="1588258724221" duration="62000" />
+      <workItem from="1588431193737" duration="2915000" />
+      <workItem from="1588512018530" duration="2354000" />
+      <workItem from="1588583892725" duration="3475000" />
     </task>
     <task id="LOCAL-00001" summary="added gitignore for maven and java">
       <created>1586525482165</created>
@@ -134,7 +135,14 @@
       <option name="project" value="LOCAL" />
       <updated>1587812120041</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Generating arithmetic expressions works (for integers mostly), should now add type check for other types than integer in AEXPR's">
+      <created>1587900215013</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1587900215013</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -146,7 +154,8 @@
     <MESSAGE value="added grammar files alongside with example f77 program, also now main contains creation of parsing tree" />
     <MESSAGE value="Added processor" />
     <MESSAGE value="Had an idea with adding load statements after whole program was parsed, maybe will come back to it" />
-    <option name="LAST_COMMIT_MESSAGE" value="Had an idea with adding load statements after whole program was parsed, maybe will come back to it" />
+    <MESSAGE value="Generating arithmetic expressions works (for integers mostly), should now add type check for other types than integer in AEXPR's" />
+    <option name="LAST_COMMIT_MESSAGE" value="Generating arithmetic expressions works (for integers mostly), should now add type check for other types than integer in AEXPR's" />
   </component>
   <component name="WindowStateProjectService">
     <state x="696" y="323" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1587309436160">
@@ -177,50 +186,50 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="851" y="273" key="#xdebugger.XInspectDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1587642462365" />
-    <state x="585" y="104" key="CommitChangelistDialog2" timestamp="1587812117234">
+    <state x="585" y="104" key="CommitChangelistDialog2" timestamp="1587900211959">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="585" y="104" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1587812117234" />
-    <state width="1877" height="307" key="GridCell.Tab.0.bottom" timestamp="1587899476505">
+    <state x="585" y="104" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1587900211959" />
+    <state width="1877" height="387" key="GridCell.Tab.0.bottom" timestamp="1588587102409">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="307" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1587899476505" />
-    <state width="1877" height="307" key="GridCell.Tab.0.center" timestamp="1587899476505">
+    <state width="1877" height="387" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1588587102409" />
+    <state width="1877" height="387" key="GridCell.Tab.0.center" timestamp="1588587102409">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="307" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1587899476505" />
-    <state width="1877" height="307" key="GridCell.Tab.0.left" timestamp="1587899476505">
+    <state width="1877" height="387" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1588587102409" />
+    <state width="1877" height="387" key="GridCell.Tab.0.left" timestamp="1588587102409">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="307" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1587899476505" />
-    <state width="1877" height="307" key="GridCell.Tab.0.right" timestamp="1587899476505">
+    <state width="1877" height="387" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1588587102409" />
+    <state width="1877" height="387" key="GridCell.Tab.0.right" timestamp="1588587102409">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="307" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1587899476505" />
-    <state width="1877" height="307" key="GridCell.Tab.1.bottom" timestamp="1587899476506">
+    <state width="1877" height="387" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1588587102409" />
+    <state width="1877" height="387" key="GridCell.Tab.1.bottom" timestamp="1588587106688">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="307" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1587899476506" />
-    <state width="1877" height="307" key="GridCell.Tab.1.center" timestamp="1587899476505">
+    <state width="1877" height="387" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1588587106688" />
+    <state width="1877" height="387" key="GridCell.Tab.1.center" timestamp="1588587106688">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="307" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1587899476505" />
-    <state width="1877" height="307" key="GridCell.Tab.1.left" timestamp="1587899476505">
+    <state width="1877" height="387" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1588587106688" />
+    <state width="1877" height="387" key="GridCell.Tab.1.left" timestamp="1588587106688">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="307" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1587899476505" />
-    <state width="1877" height="307" key="GridCell.Tab.1.right" timestamp="1587899476506">
+    <state width="1877" height="387" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1588587106688" />
+    <state width="1877" height="387" key="GridCell.Tab.1.right" timestamp="1588587106688">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="307" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1587899476506" />
+    <state width="1877" height="387" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1588587106688" />
     <state x="490" y="175" key="Maven.ArtifactSearchDialog" timestamp="1587727680037">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="490" y="175" key="Maven.ArtifactSearchDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1587727680037" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1587405255532">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1587900221874">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1587405255532" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1587900221874" />
     <state x="656" y="118" width="607" height="804" key="find.popup" timestamp="1587896799034">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -244,19 +253,14 @@
           <option name="timeStamp" value="11" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/fortran/tools/ParsingProcessor.java</url>
-          <line>64</line>
-          <option name="timeStamp" value="26" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/fortran/program/statements/expressions/AEXPR0.java</url>
           <line>16</line>
           <option name="timeStamp" value="27" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/fortran/program/statements/expressions/ArithmeticExpression.java</url>
-          <line>40</line>
-          <option name="timeStamp" value="31" />
+          <url>file://$PROJECT_DIR$/src/main/java/fortran/program/statements/Assignment.java</url>
+          <line>11</line>
+          <option name="timeStamp" value="29" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -269,6 +273,11 @@
         <watch expression="((Assignment)((java.util.LinkedList)((ProgramBody)((MainProgram)programSection).programBody).statements).get(1)).expression" custom="fortran.program.statements.Assignment,java.util.LinkedList,fortran.program.statements.ProgramBody,fortran.program.statements.MainProgram" />
         <watch expression="defaultTreeListener.parseTree.nodes.get(3).children.get(0).children.get(7).children.get(0).children.get(0).children.get(0).children.get(1)" />
         <watch expression="defaultTreeListener.parseTree.nodes.get(100)" />
+        <watch expression="defaultTreeListener.parseTree.root.children.get(0).children" />
+        <watch expression="defaultTreeListener.parseTree.root.children.get(0)" />
+        <watch expression="defaultTreeListener.parseTree.nodes" />
+        <watch expression="defaultTreeListener.parseTree.nodes.get(3).children.get(0).children.get(5).children.get(0).children.get(0).children.get(0).children.get(1).children.get(0).children.get(0).children.get(0).children.get(0).children.get(0).children.get(0).children.get(0).children.get(0).children.get(0).children.get(0)" />
+        <watch expression="defaultTreeListener.parseTree.root.children.get(0).children.get(0).children.get(0).children" />
       </configuration>
     </watches-manager>
   </component>

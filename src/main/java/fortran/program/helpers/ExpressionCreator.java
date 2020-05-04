@@ -1,8 +1,7 @@
 package fortran.program.helpers;
 
 import fortran.program.statements.Expression;
-import fortran.program.statements.ProgramSection;
-import fortran.program.statements.VarRef;
+import fortran.program.statements.expressions.VarRef;
 import fortran.program.statements.expressions.*;
 import org.snt.inmemantlr.tree.ParseTreeNode;
 
@@ -20,6 +19,8 @@ public class ExpressionCreator {
                 return new AEXPR1(n, typeName);
 //            case "aexpr3":
 //                return new AEXPR1(n, typeName);
+            case "logicalConstant":
+                return new LogicalConstant(n.getLabel(), typeName);
             default:
                 return new Expression(typeName);
         }

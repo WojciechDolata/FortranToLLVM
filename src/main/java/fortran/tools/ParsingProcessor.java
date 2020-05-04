@@ -13,6 +13,10 @@ public class ParsingProcessor {
     private Stack<String> program = new Stack<>();
 
     public void addLine(String line) {
+        program.push("\t" + line);
+    }
+
+    public void addLabelLine(String line) {
         program.push(line);
     }
 

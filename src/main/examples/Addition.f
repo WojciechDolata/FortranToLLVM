@@ -5,7 +5,12 @@
       b = 4
 
       if ( a .lt. b ) then
-      a = b
+        a = b
+        b = 4
+      elseif (a .gt. b) then
+        b = a
       else
-      b = a
+        b = 5
       endif
+
+      end

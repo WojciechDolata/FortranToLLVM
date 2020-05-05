@@ -378,15 +378,15 @@ blockIfStatement
    ;
 
 firstIfBlock
-   : THEN wholeStatement +
+   : THEN EOL? wholeStatement +
    ;
 
 elseIfStatement
-   : (ELSEIF | (ELSE IF)) LPAREN logicalExpression RPAREN THEN wholeStatement +
+   : (ELSEIF | (ELSE IF)) LPAREN logicalExpression RPAREN EOL? THEN EOL? wholeStatement +
    ;
 
 elseStatement
-   : ELSE wholeStatement +
+   : ELSE EOL? wholeStatement +
    ;
 
 endIfStatement

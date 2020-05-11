@@ -9,6 +9,8 @@
         b = 4
       elseif (a .gt. b) then
         b = a
+      elseif (b .gt. b) then
+        b = b
       else
         b = 5
       endif

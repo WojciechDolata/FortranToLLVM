@@ -2,50 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0ebe0e8d-b57a-42d9-9ba8-3904fbe59b75" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/fortran/program/statements/ifstatements/ArithmeticIfStatement.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/fortran/program/statements/ifstatements/BlockIfStatement.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/fortran/program/statements/ifstatements/ElseIfStatement.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/fortran/program/statements/ifstatements/IfSubStatement.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/fortran/program/statements/ifstatements/LogicalIfStatement.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/examples/Addition.f" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/examples/Addition.f" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/grammar/Fortran77Parser.g4" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/grammar/Fortran77Parser.g4" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fortran/program/statements/IfStatement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fortran/program/statements/IfStatement.java" afterDir="false" />
     </list>
-    <ignored path="$PROJECT_DIR$/target/" />
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/examples/Addition.f">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="12" column="13" lean-forward="true" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/grammar/Fortran77Lexer.g4">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="160">
-              <caret line="662" column="3" lean-forward="true" selection-start-line="662" selection-start-column="3" selection-end-line="662" selection-end-column="3" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/grammar/Fortran77Parser.g4">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="384" column="62" selection-start-line="384" selection-start-column="62" selection-end-line="384" selection-end-column="62" />
-              <folding>
-                <element signature="e#0#14059#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -56,24 +25,8 @@
       </list>
     </option>
   </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>ifst</find>
-      <find>then</find>
-      <find>else</find>
-      <find>EOL</find>
-    </findStrings>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
-      <list>
-        <option value="$PROJECT_DIR$/src/main/examples/Addition.f" />
-        <option value="$PROJECT_DIR$/src/main/grammar/Fortran77Parser.g4" />
-      </list>
-    </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="y" value="167" />
@@ -82,51 +35,6 @@
   </component>
   <component name="ProjectId" id="1alS5IGIItftv7hXJsNiKGl1XLt" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
-  <component name="ProjectView">
-    <navigator proportions="" version="1">
-      <foldersAlwaysOnTop value="true" />
-    </navigator>
-    <panes>
-      <pane id="PackagesPane" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="FortranToLLVM" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FortranToLLVM" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="FortranToLLVM" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FortranToLLVM" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="FortranToLLVM" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FortranToLLVM" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="FortranToLLVM" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FortranToLLVM" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="examples" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="FortranToLLVM" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FortranToLLVM" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="grammar" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="Scope" />
-    </panes>
-  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -152,18 +60,6 @@
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\wojci\Documents\Kompilatory\src\main" />
     </key>
-  </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
   </component>
   <component name="RunManager">
     <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -213,6 +109,9 @@
       <workItem from="1588583892725" duration="12129000" />
       <workItem from="1588685904239" duration="154000" />
       <workItem from="1588686101590" duration="1050000" />
+      <workItem from="1588861967814" duration="593000" />
+      <workItem from="1588954659768" duration="687000" />
+      <workItem from="1589185306048" duration="7596000" />
     </task>
     <task id="LOCAL-00001" summary="added gitignore for maven and java">
       <created>1586525482165</created>
@@ -287,46 +186,6 @@
     <option name="localTasksCounter" value="11" />
     <servers />
   </component>
-  <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1204000" />
-  </component>
-  <component name="ToolWindowManager">
-    <frame x="0" y="25" width="1366" height="743" extended-state="6" />
-    <editor active="true" />
-    <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25378788" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Image Layers" order="2" />
-      <window_info id="Designer" order="3" />
-      <window_info id="UI Designer" order="4" />
-      <window_info id="Capture Tool" order="5" />
-      <window_info id="Favorites" order="6" side_tool="true" />
-      <window_info anchor="bottom" id="ANTLR Preview" order="0" />
-      <window_info anchor="bottom" id="Tool Output" order="1" />
-      <window_info anchor="bottom" id="Message" order="2" />
-      <window_info anchor="bottom" id="Find" order="3" />
-      <window_info active="true" anchor="bottom" id="Run" order="4" visible="true" weight="0.32899022" />
-      <window_info anchor="bottom" id="Debug" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="6" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="7" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="8" />
-      <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="10" />
-      <window_info anchor="bottom" id="Database Changes" order="11" />
-      <window_info anchor="bottom" id="Terminal" order="12" />
-      <window_info anchor="bottom" id="Event Log" order="13" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="14" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="right" id="Database" order="4" />
-      <window_info anchor="right" id="Theme Preview" order="5" />
-      <window_info anchor="right" id="Maven" order="6" />
-      <window_info anchor="right" id="Capture Analysis" order="7" />
-      <window_info anchor="right" id="Palette&#9;" order="8" />
-    </layout>
-  </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
@@ -348,10 +207,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="696" y="323" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1587309436160" />
-    <state x="765" y="229" key="#com.intellij.ide.util.MemberChooser" timestamp="1588594929407">
+    <state x="765" y="229" key="#com.intellij.ide.util.MemberChooser" timestamp="1589193342027">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="765" y="229" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1588594929407" />
+    <state x="765" y="229" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1589193342027" />
     <state x="641" y="445" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1587736596850">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -376,38 +235,42 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="517" y="116" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1588594032707" />
-    <state width="1877" height="322" key="GridCell.Tab.0.bottom" timestamp="1588598269557">
+    <state x="739" y="274" key="FileChooserDialogImpl" timestamp="1588957580449">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="322" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1588598269557" />
-    <state width="1877" height="322" key="GridCell.Tab.0.center" timestamp="1588598269557">
+    <state x="739" y="274" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1588957580449" />
+    <state width="1877" height="198" key="GridCell.Tab.0.bottom" timestamp="1589193497087">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="322" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1588598269557" />
-    <state width="1877" height="322" key="GridCell.Tab.0.left" timestamp="1588598269557">
+    <state width="1877" height="198" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1589193497087" />
+    <state width="1877" height="198" key="GridCell.Tab.0.center" timestamp="1589193497087">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="322" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1588598269557" />
-    <state width="1877" height="322" key="GridCell.Tab.0.right" timestamp="1588598269557">
+    <state width="1877" height="198" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1589193497087" />
+    <state width="1877" height="198" key="GridCell.Tab.0.left" timestamp="1589193497087">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="322" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1588598269557" />
-    <state width="1877" height="386" key="GridCell.Tab.1.bottom" timestamp="1588595437214">
+    <state width="1877" height="198" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1589193497087" />
+    <state width="1877" height="198" key="GridCell.Tab.0.right" timestamp="1589193497087">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="386" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1588595437214" />
-    <state width="1877" height="386" key="GridCell.Tab.1.center" timestamp="1588595437214">
+    <state width="1877" height="198" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1589193497087" />
+    <state width="1877" height="361" key="GridCell.Tab.1.bottom" timestamp="1589190815874">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="386" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1588595437214" />
-    <state width="1877" height="386" key="GridCell.Tab.1.left" timestamp="1588595437214">
+    <state width="1877" height="361" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1589190815874" />
+    <state width="1877" height="361" key="GridCell.Tab.1.center" timestamp="1589190815874">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="386" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1588595437214" />
-    <state width="1877" height="386" key="GridCell.Tab.1.right" timestamp="1588595437214">
+    <state width="1877" height="361" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1589190815874" />
+    <state width="1877" height="361" key="GridCell.Tab.1.left" timestamp="1589190815874">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="386" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1588595437214" />
+    <state width="1877" height="361" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1589190815874" />
+    <state width="1877" height="361" key="GridCell.Tab.1.right" timestamp="1589190815874">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="361" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1589190815874" />
     <state x="490" y="175" key="Maven.ArtifactSearchDialog" timestamp="1587727680037">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -420,6 +283,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="656" y="118" width="607" height="804" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1587896799034" />
+    <state x="342" y="215" key="new project wizard" timestamp="1588957596893">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="342" y="215" key="new project wizard/0.0.1920.1040@0.0.1920.1040" timestamp="1588957596893" />
     <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1587812234219">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -431,38 +298,47 @@
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/fortran/tools/FPTCreator.java</url>
           <line>34</line>
-          <properties />
           <option name="timeStamp" value="8" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/fortran/App.java</url>
           <line>21</line>
-          <properties />
           <option name="timeStamp" value="11" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/fortran/program/statements/expressions/AEXPR0.java</url>
           <line>11</line>
-          <properties />
           <option name="timeStamp" value="27" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/fortran/program/statements/Assignment.java</url>
           <line>11</line>
-          <properties />
           <option name="timeStamp" value="29" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/fortran/program/statements/expressions/OneArgumentExpression.java</url>
           <line>18</line>
-          <properties />
           <option name="timeStamp" value="32" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/fortran/program/statements/expressions/OneArgumentExpression.java</url>
           <line>46</line>
-          <properties />
           <option name="timeStamp" value="35" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/fortran/program/statements/IfStatement.java</url>
+          <line>17</line>
+          <option name="timeStamp" value="37" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/fortran/program/statements/ifstatements/ElseIfStatement.java</url>
+          <line>19</line>
+          <option name="timeStamp" value="39" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/fortran/program/statements/ifstatements/BlockIfStatement.java</url>
+          <line>18</line>
+          <option name="timeStamp" value="41" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -481,33 +357,8 @@
         <watch expression="defaultTreeListener.parseTree.nodes.get(3).children.get(0).children.get(5).children.get(0).children.get(0).children.get(0).children.get(1).children.get(0).children.get(0).children.get(0).children.get(0).children.get(0).children.get(0).children.get(0).children.get(0).children.get(0).children.get(0)" />
         <watch expression="defaultTreeListener.parseTree.root.children.get(0).children.get(0).children.get(0).children" />
         <watch expression="defaultTreeListener.parseTree.nodes.get(4).children.get(4).children.get(0).children" />
+        <watch expression="defaultTreeListener.parseTree.root.children.get(0).children" />
       </configuration>
     </watches-manager>
-  </component>
-  <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/examples/Addition.f">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="13" lean-forward="true" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/grammar/Fortran77Lexer.g4">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="662" column="3" lean-forward="true" selection-start-line="662" selection-start-column="3" selection-end-line="662" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/grammar/Fortran77Parser.g4">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="384" column="62" selection-start-line="384" selection-start-column="62" selection-end-line="384" selection-end-column="62" />
-          <folding>
-            <element signature="e#0#14059#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
   </component>
 </project>

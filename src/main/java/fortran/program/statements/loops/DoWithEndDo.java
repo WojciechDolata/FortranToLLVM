@@ -10,12 +10,12 @@ public class DoWithEndDo extends ProgramSection {
     private Iterator iterator;
     private String beginLabel;
     private String endLabel;
+    private int labelCount;
 
     public DoWithEndDo(ParseTreeNode n) {
-        int labelCount = parsingProcessor.addAndGetNewLoop();
+        labelCount = parsingProcessor.addAndGetNewLoop();
         beginLabel = "loopBegining" + labelCount;
         endLabel = "loopEnd" + labelCount;
-
         iterator = new Iterator(n.getChild(0), labelCount);
         doBody = new ProgramBody(n.getChild(1).getChildren());
     }
@@ -26,8 +26,15 @@ public class DoWithEndDo extends ProgramSection {
 
         iterator.makeAssignment();
 
-//        should change all i occurrences in body to nextVal
+        int beforeIndex = parsingProcessor.getProgramStack().size();
+
         doBody.process();
+//        Swapping out iterator for nextVal (from phi)
+        var program = parsingProcessor.getProgramStack();
+        for(int i = beforeIndex; i < program.size(); i++) {
+            program.set(i, program.get(i).replace("%" + iterator.getName(), "%nextVal" + labelCount));
+        }
+        parsingProcessor.setProgram(program);
 
         iterator.createRest();
 

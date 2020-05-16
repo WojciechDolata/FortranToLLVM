@@ -38,7 +38,13 @@ public class TwoArgumentExpression extends Expression {
             }
         }
         for(var expr: n.getChildren()) {
-            expressions.add(ExpressionCreator.create(expr, t));
+            ParseTreeNode m = expr;
+            while (m.getChildren().size() != 0){
+                m = m.getChild(0);
+            }
+            var varName = m.getLabel();
+            expressions.add(ExpressionCreator.create(expr, parsingProcessor.getVariableType(varName)));
+//            expressions.add(ExpressionCreator.create(expr, t));
         }
     }
 

@@ -2,16 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0ebe0e8d-b57a-42d9-9ba8-3904fbe59b75" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_projectlombok_lombok_1_18_12.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/fortran/program/statements/loops/DoWithEndDo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/fortran/program/statements/loops/Iterator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fortran-to-llvm.iml" beforeDir="false" afterPath="$PROJECT_DIR$/fortran-to-llvm.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/examples/Addition.f" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/examples/Addition.f" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/grammar/Fortran77Lexer.g4" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/grammar/Fortran77Lexer.g4" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/grammar/Fortran77Parser.g4" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/grammar/Fortran77Parser.g4" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/fortran/program/statements/ProgramBody.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fortran/program/statements/ProgramBody.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fortran/program/statements/expressions/TwoArgumentExpression.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fortran/program/statements/expressions/TwoArgumentExpression.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fortran/program/statements/loops/DoWithEndDo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fortran/program/statements/loops/DoWithEndDo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fortran/program/statements/loops/Iterator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fortran/program/statements/loops/Iterator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/fortran/tools/ParsingProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fortran/tools/ParsingProcessor.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -113,7 +108,7 @@
       <workItem from="1589185306048" duration="7980000" />
       <workItem from="1589360881114" duration="1513000" />
       <workItem from="1589450280795" duration="3915000" />
-      <workItem from="1589620486006" duration="8182000" />
+      <workItem from="1589620486006" duration="12758000" />
     </task>
     <task id="LOCAL-00001" summary="added gitignore for maven and java">
       <created>1586525482165</created>
@@ -192,7 +187,14 @@
       <option name="project" value="LOCAL" />
       <updated>1589193532375</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="still have to dif doStatements, till now changed grammar + added basics of doStatements&#10;TODO: add different loops to grammar">
+      <created>1589629138049</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1589629138049</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -210,7 +212,8 @@
     <MESSAGE value="Added logical .and., .or. and .not." />
     <MESSAGE value="Added arithmetic to logical .gt., .le., etc..." />
     <MESSAGE value="Added if statements" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added if statements" />
+    <MESSAGE value="still have to dif doStatements, till now changed grammar + added basics of doStatements&#10;TODO: add different loops to grammar" />
+    <option name="LAST_COMMIT_MESSAGE" value="still have to dif doStatements, till now changed grammar + added basics of doStatements&#10;TODO: add different loops to grammar" />
   </component>
   <component name="WindowStateProjectService">
     <state x="696" y="323" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1587309436160">
@@ -249,46 +252,46 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="851" y="273" key="#xdebugger.XInspectDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1587642462365" />
-    <state x="517" y="116" key="CommitChangelistDialog2" timestamp="1589629097860">
+    <state x="517" y="116" key="CommitChangelistDialog2" timestamp="1589629135613">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="517" y="116" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1589629097860" />
+    <state x="517" y="116" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1589629135613" />
     <state x="739" y="274" key="FileChooserDialogImpl" timestamp="1588957580449">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="739" y="274" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1588957580449" />
-    <state width="1877" height="279" key="GridCell.Tab.0.bottom" timestamp="1589629003214">
+    <state width="1877" height="279" key="GridCell.Tab.0.bottom" timestamp="1589642529363">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="279" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1589629003214" />
-    <state width="1877" height="279" key="GridCell.Tab.0.center" timestamp="1589629003214">
+    <state width="1877" height="279" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1589642529363" />
+    <state width="1877" height="279" key="GridCell.Tab.0.center" timestamp="1589642529363">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="279" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1589629003214" />
-    <state width="1877" height="279" key="GridCell.Tab.0.left" timestamp="1589629003214">
+    <state width="1877" height="279" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1589642529363" />
+    <state width="1877" height="279" key="GridCell.Tab.0.left" timestamp="1589642529363">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="279" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1589629003214" />
-    <state width="1877" height="279" key="GridCell.Tab.0.right" timestamp="1589629003214">
+    <state width="1877" height="279" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1589642529363" />
+    <state width="1877" height="279" key="GridCell.Tab.0.right" timestamp="1589642529363">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="279" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1589629003214" />
-    <state width="1877" height="361" key="GridCell.Tab.1.bottom" timestamp="1589628579074">
+    <state width="1877" height="279" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1589642529363" />
+    <state width="1877" height="361" key="GridCell.Tab.1.bottom" timestamp="1589640402855">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="361" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1589628579074" />
-    <state width="1877" height="361" key="GridCell.Tab.1.center" timestamp="1589628579074">
+    <state width="1877" height="361" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1589640402855" />
+    <state width="1877" height="361" key="GridCell.Tab.1.center" timestamp="1589640402855">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="361" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1589628579074" />
-    <state width="1877" height="361" key="GridCell.Tab.1.left" timestamp="1589628579074">
+    <state width="1877" height="361" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1589640402855" />
+    <state width="1877" height="361" key="GridCell.Tab.1.left" timestamp="1589640402854">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="361" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1589628579074" />
-    <state width="1877" height="361" key="GridCell.Tab.1.right" timestamp="1589628579074">
+    <state width="1877" height="361" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1589640402854" />
+    <state width="1877" height="361" key="GridCell.Tab.1.right" timestamp="1589640402855">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="361" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1589628579074" />
+    <state width="1877" height="361" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1589640402855" />
     <state x="490" y="175" key="Maven.ArtifactSearchDialog" timestamp="1587727680037">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -297,10 +300,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="461" y="162" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1589362429798" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1589193537350">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1589629143652">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1589193537350" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1589629143652" />
     <state x="656" y="118" width="607" height="804" key="find.popup" timestamp="1587896799034">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -358,14 +361,14 @@
           <option name="timeStamp" value="41" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/fortran/program/statements/expressions/VarRef.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/fortran/program/statements/loops/DoWithEndDo.java</url>
           <line>18</line>
-          <option name="timeStamp" value="50" />
+          <option name="timeStamp" value="52" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/fortran/program/statements/expressions/VarRef.java</url>
-          <line>37</line>
-          <option name="timeStamp" value="51" />
+          <url>file://$PROJECT_DIR$/src/main/java/fortran/program/statements/expressions/LEXPR4.java</url>
+          <line>9</line>
+          <option name="timeStamp" value="55" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -387,6 +390,8 @@
         <watch expression="defaultTreeListener.parseTree.root.children.get(0).children" />
         <watch expression="defaultTreeListener.parseTree" />
         <watch expression="defaultTreeListener.parseTree.nodes" />
+        <watch expression="defaultTreeListener" />
+        <watch expression="defaultTreeListener" language="JAVA" />
       </configuration>
     </watches-manager>
   </component>

@@ -38,6 +38,14 @@ public class ParsingProcessor {
         return stringBuilder.toString();
     }
 
+    public Stack<String> getProgramStack() {
+        return program;
+    }
+
+    public void setProgram(Stack<String> p) {
+        program = p;
+    }
+
     public void addNewVariable(String key) {
         if (variables.containsKey(key)) {
             index++;

@@ -175,7 +175,7 @@ STOP
 
 
 ENDDO
-   : 'ENDDO' | 'enddo'
+   : 'ENDDO' | 'enddo' | 'end do' | 'END DO'
    ;
 
 
@@ -651,6 +651,9 @@ NAME
    : (('i' | 'f' | 'd' | 'g' | 'e') (NUM) + '.') FDESC | (ALNUM +) (ALNUM)*
    ;
 
+LABELNAME
+   : (ALNUM +) (ALNUM)*
+   ;
 
 COMMENT
    : 'c' (~ [\r\n])*
@@ -662,6 +665,10 @@ STRINGLITERAL
    ;
 EOL
    : [\r\n] +
+   ;
+
+TAB
+   : [\t] +
    ;
 
 WS

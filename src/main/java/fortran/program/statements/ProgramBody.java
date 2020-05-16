@@ -1,5 +1,6 @@
 package fortran.program.statements;
 
+import fortran.program.statements.loops.DoWithEndDo;
 import org.snt.inmemantlr.tree.ParseTreeNode;
 
 import java.util.LinkedList;
@@ -22,6 +23,9 @@ public class ProgramBody extends ProgramSection {
                     break;
                 case "ifStatement":
                     statements.add(new IfStatement(child));
+                    break;
+                case "doWithEndDo":
+                    statements.add(new DoWithEndDo(child));
                     break;
             }
 

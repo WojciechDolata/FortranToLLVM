@@ -113,7 +113,7 @@ subprogramBody
    ;
 
 wholeStatement
-   : LABEL? statement EOL
+   : LABELNAME? statement EOL
    ;
 
 endStatement
@@ -350,7 +350,7 @@ computedGoto
    ;
 
 lblRef
-   : ICON
+   : LABELNAME
    ;
 
 labelList
@@ -398,11 +398,11 @@ doStatement
    ;
 
 doVarArgs
-   : variableName ASSIGN intRealDpExpr COMMA intRealDpExpr (COMMA intRealDpExpr)?
+   : variableName ASSIGN intRealDpExpr COMMA intRealDpExpr (COMMA intRealDpExpr)? EOL
    ;
 
 doWithLabel
-   : lblRef (COMMA)? doVarArgs
+   : lblRef (COMMA)? doVarArgs doBody lblRef TAB continueStatement
    ;
 
 doBody
@@ -414,7 +414,7 @@ doWithEndDo
    ;
 
 enddoStatement
-   : (ENDDO | (END DO))
+   : (ENDDO)
    ;
 
 continueStatement

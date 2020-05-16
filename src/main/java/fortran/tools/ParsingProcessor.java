@@ -12,9 +12,14 @@ public class ParsingProcessor {
     private Integer index = 0;
     private Stack<String> program = new Stack<>();
     private Integer ifCount = 0;
+    private Integer loopCount = 0;
 
     public Integer addAndGetNewIf() {
         return ifCount++;
+    }
+
+    public Integer addAndGetNewLoop() {
+        return loopCount++;
     }
 
     public void addLine(String line) {

@@ -1,18 +1,13 @@
       implicit none
 
-      integer a, b
+      integer i, a, b
       a = 3
-      b = 4
+      b = 0
 
-      if ( a .lt. b ) then
-        a = b
-        b = 4
-      elseif (a .gt. b) then
-        b = a
-      elseif (b .gt. b) then
-        b = b
-      else
-        b = 5
-      endif
+      do i = 0, 10
+        b = i + 1
+      enddo
+
+      b = 0
 
       end

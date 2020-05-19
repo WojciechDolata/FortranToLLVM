@@ -14,7 +14,17 @@ public class ProgramBody extends ProgramSection {
             while (child.getChildren().size() == 1) {
                 child = child.getChild(0);
             }
+            if(child.hasChildren() && child.getChild(0).getRule().equals("lblRef")) {
+                statements.add(new Label(child.getChild(0)));
+                child = child.getChild(1);
+            }
+            while (child.getChildren().size() == 1) {
+                child = child.getChild(0);
+            }
             switch (child.getRule()) {
+                case "lblRef":
+                    statements.add(new GoTo(child));
+                    break;
                 case "typeStatement":
                     statements.add(new Declaration(child));
                     break;

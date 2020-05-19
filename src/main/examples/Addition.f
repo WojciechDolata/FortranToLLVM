@@ -1,17 +1,14 @@
       implicit none
 
       integer i, a, b
-      logical d
-      a = 3
-      b = 0
-
-      b = b + 1
-      d = b .gt. 10
+      b = 1
 
 
-      do i = 0, 10
-        b = i + 1
-      enddo
+    10 if (b .le. 100) then
+            b = 2*b
+            goto 10
+         endif
+
 
       b = 0
 

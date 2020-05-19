@@ -652,7 +652,7 @@ NAME
    ;
 
 LABELNAME
-   : (ALNUM +) (ALNUM)*
+   : (NUM) +
    ;
 
 COMMENT
@@ -674,3 +674,7 @@ TAB
 WS
    : [\t ] + -> skip
    ;
+
+SPACE
+    : ' '
+    ;

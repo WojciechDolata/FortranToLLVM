@@ -113,7 +113,7 @@ subprogramBody
    ;
 
 wholeStatement
-   : LABELNAME? statement EOL
+   : (lblRef)?  statement EOL
    ;
 
 endStatement
@@ -338,7 +338,7 @@ dataImpliedDoListWhat
    ;
 
 gotoStatement
-   : ((GO | GOTO) to) (unconditionalGoto | computedGoto | assignedGoto)
+   : ((GO | GOTO) to?) (unconditionalGoto | computedGoto | assignedGoto)
    ;
 
 unconditionalGoto
@@ -350,7 +350,7 @@ computedGoto
    ;
 
 lblRef
-   : LABELNAME
+   : NAME
    ;
 
 labelList

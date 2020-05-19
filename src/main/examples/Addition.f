@@ -9,6 +9,9 @@
             goto 10
          endif
 
+      do 20 i=0, 10
+        b = b - 1
+  20  continue
 
       b = 0
 

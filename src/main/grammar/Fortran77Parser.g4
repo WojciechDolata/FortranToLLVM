@@ -402,7 +402,7 @@ doVarArgs
    ;
 
 doWithLabel
-   : lblRef (COMMA)? doVarArgs doBody lblRef TAB continueStatement
+   : lblRef (COMMA)? doVarArgs doBody lblRef continueStatement
    ;
 
 doBody

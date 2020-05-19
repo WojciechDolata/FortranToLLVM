@@ -2,14 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0ebe0e8d-b57a-42d9-9ba8-3904fbe59b75" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/fortran/program/statements/GoTo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/fortran/program/statements/Label.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/examples/Addition.f" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/examples/Addition.f" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/grammar/Fortran77Lexer.g4" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/grammar/Fortran77Lexer.g4" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/grammar/Fortran77Parser.g4" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/grammar/Fortran77Parser.g4" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/fortran/program/statements/ProgramBody.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fortran/program/statements/ProgramBody.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -112,7 +107,7 @@
       <workItem from="1589450280795" duration="3915000" />
       <workItem from="1589620486006" duration="13410000" />
       <workItem from="1589793468453" duration="2229000" />
-      <workItem from="1589880161465" duration="6955000" />
+      <workItem from="1589880161465" duration="7996000" />
     </task>
     <task id="LOCAL-00001" summary="added gitignore for maven and java">
       <created>1586525482165</created>
@@ -205,7 +200,14 @@
       <option name="project" value="LOCAL" />
       <updated>1589642572359</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="added GOTO, so that user can create label IF(cond) THEN {body ... GOTO label} ENDIF loop">
+      <created>1589887333754</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1589887333754</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -235,7 +237,8 @@
     <MESSAGE value="Added if statements" />
     <MESSAGE value="still have to dif doStatements, till now changed grammar + added basics of doStatements&#10;TODO: add different loops to grammar" />
     <MESSAGE value="do enddo loop works, still have to add more + fix grammar (names starting with c are ignored)" />
-    <option name="LAST_COMMIT_MESSAGE" value="do enddo loop works, still have to add more + fix grammar (names starting with c are ignored)" />
+    <MESSAGE value="added GOTO, so that user can create label IF(cond) THEN {body ... GOTO label} ENDIF loop" />
+    <option name="LAST_COMMIT_MESSAGE" value="added GOTO, so that user can create label IF(cond) THEN {body ... GOTO label} ENDIF loop" />
   </component>
   <component name="WindowStateProjectService">
     <state x="696" y="323" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1587309436160">
@@ -274,46 +277,46 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="851" y="273" key="#xdebugger.XInspectDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1587642462365" />
-    <state x="517" y="116" key="CommitChangelistDialog2" timestamp="1589642570576">
+    <state x="517" y="116" key="CommitChangelistDialog2" timestamp="1589888349791">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="517" y="116" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1589642570576" />
+    <state x="517" y="116" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1589888349791" />
     <state x="739" y="274" key="FileChooserDialogImpl" timestamp="1588957580449">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="739" y="274" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1588957580449" />
-    <state width="1877" height="279" key="GridCell.Tab.0.bottom" timestamp="1589887247289">
+    <state width="1877" height="279" key="GridCell.Tab.0.bottom" timestamp="1589888349809">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="279" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1589887247289" />
-    <state width="1877" height="279" key="GridCell.Tab.0.center" timestamp="1589887247289">
+    <state width="1877" height="279" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1589888349809" />
+    <state width="1877" height="279" key="GridCell.Tab.0.center" timestamp="1589888349809">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="279" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1589887247289" />
-    <state width="1877" height="279" key="GridCell.Tab.0.left" timestamp="1589887247289">
+    <state width="1877" height="279" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1589888349809" />
+    <state width="1877" height="279" key="GridCell.Tab.0.left" timestamp="1589888349809">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="279" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1589887247289" />
-    <state width="1877" height="279" key="GridCell.Tab.0.right" timestamp="1589887247289">
+    <state width="1877" height="279" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1589888349809" />
+    <state width="1877" height="279" key="GridCell.Tab.0.right" timestamp="1589888349809">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="279" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1589887247289" />
-    <state width="1877" height="346" key="GridCell.Tab.1.bottom" timestamp="1589887115383">
+    <state width="1877" height="279" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1589888349809" />
+    <state width="1877" height="346" key="GridCell.Tab.1.bottom" timestamp="1589888239667">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="346" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1589887115383" />
-    <state width="1877" height="346" key="GridCell.Tab.1.center" timestamp="1589887115383">
+    <state width="1877" height="346" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1589888239667" />
+    <state width="1877" height="346" key="GridCell.Tab.1.center" timestamp="1589888239667">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="346" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1589887115383" />
-    <state width="1877" height="346" key="GridCell.Tab.1.left" timestamp="1589887115383">
+    <state width="1877" height="346" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1589888239667" />
+    <state width="1877" height="346" key="GridCell.Tab.1.left" timestamp="1589888239667">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="346" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1589887115383" />
-    <state width="1877" height="346" key="GridCell.Tab.1.right" timestamp="1589887115383">
+    <state width="1877" height="346" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1589888239667" />
+    <state width="1877" height="346" key="GridCell.Tab.1.right" timestamp="1589888239667">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="346" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1589887115383" />
+    <state width="1877" height="346" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1589888239667" />
     <state x="490" y="175" key="Maven.ArtifactSearchDialog" timestamp="1587727680037">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

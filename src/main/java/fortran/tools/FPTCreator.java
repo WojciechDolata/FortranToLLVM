@@ -26,8 +26,26 @@ public class FPTCreator {
             String s = FileUtils.loadFileContent(baseFilePath + fileName);
             gp.setListener(defaultTreeListener);
             gp.compile();
-            var a = gp.getAllCompiledObjects();
 //            ctx = gp.parse(s, "compilationUnit", GenericParser.CaseSensitiveType.NONE);
+            ctx = gp.parse(s);
+        } catch (Exception ex) {
+            System.out.println(ex.getMessage());
+        }
+        return defaultTreeListener.getParseTree();
+    }
+
+    public ParseTree getParseTree (File file) {
+        ParserRuleContext ctx = new ParserRuleContext();
+        DefaultTreeListener defaultTreeListener = new DefaultTreeListener();
+        try {
+            File[] files = {
+                    new File(lexerPath),
+                    new File(parserPath)
+            };
+            GenericParser gp = new GenericParser(files);
+            String s = FileUtils.loadFileContent(file.getPath());
+            gp.setListener(defaultTreeListener);
+            gp.compile();
             ctx = gp.parse(s);
         } catch (Exception ex) {
             System.out.println(ex.getMessage());

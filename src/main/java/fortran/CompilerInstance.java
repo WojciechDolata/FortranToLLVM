@@ -1,27 +1,27 @@
 package fortran;
 
-import fortran.program.statements.ProgramSection;
 import fortran.program.statements.MainProgram;
+import fortran.program.statements.ProgramSection;
 import fortran.tools.FPTCreator;
 import fortran.tools.ParsingProcessor;
-import javafx.application.Application;
-import javafx.stage.Stage;
 import org.snt.inmemantlr.tree.ParseTree;
 
-/**
- * Hello world!
- *
- */
-public class App {
+import java.io.File;
+
+public class CompilerInstance {
     private static ParsingProcessor parsingProcessor;
+    private FPTCreator fptCreator;
 
-    public static void main( String[] args ) {
+    public CompilerInstance() {
         parsingProcessor = ParsingProcessor.getInstance();
-        FPTCreator FPTCreator = new FPTCreator();
-        ParseTree myParseTree = FPTCreator.getParseTree("Addition.f");
+        fptCreator = new FPTCreator();
+    }
 
+    public String compileFromFile(File file) {
+
+        ParseTree myParseTree = fptCreator.getParseTree(file);
         ProgramSection programSection = new MainProgram(myParseTree.getNodes().get(3));
         programSection.process();
-        System.out.println(parsingProcessor.getProgram());
+        return parsingProcessor.getProgram();
     }
 }

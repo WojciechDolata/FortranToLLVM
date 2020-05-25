@@ -2,9 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0ebe0e8d-b57a-42d9-9ba8-3904fbe59b75" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_base_14.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_base_win_14.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_controls_14.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_controls_win_14.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_graphics_14.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_graphics_win_14.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/fortran/CompilerInstance.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ui/HelloFX.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/sample.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/examples/Addition.f" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/examples/Addition.f" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/grammar/Fortran77Parser.g4" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/grammar/Fortran77Parser.g4" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fortran-to-llvm.iml" beforeDir="false" afterPath="$PROJECT_DIR$/fortran-to-llvm.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fortran/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fortran/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fortran/tools/FPTCreator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fortran/tools/FPTCreator.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,6 +28,7 @@
         <option value="Fortran File" />
         <option value="Interface" />
         <option value="Class" />
+        <option value="FxmlFile" />
       </list>
     </option>
   </component>
@@ -35,11 +47,14 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1588687191634" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="C:/Program Files/Java/jre1.8.0_251/lib/ext/jfxrt.jar!/" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="project.structure.last.edited" value="SDKs" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="preferences.JavaFX" />
   </component>
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
@@ -49,10 +64,11 @@
       <recent name="fortran.program.statements.expressions" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\wojci\Documents\Kompilatory\src\main\resources" />
       <recent name="C:\Users\wojci\Documents\Kompilatory\src\main" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.HelloFX">
     <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="fortran.App" />
       <module name="fortran-to-llvm" />
@@ -66,8 +82,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="HelloFX" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ui.HelloFX" />
+      <module name="fortran-to-llvm" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.HelloFX" />
         <item itemvalue="Application.App" />
       </list>
     </recent_temporary>
@@ -107,7 +131,10 @@
       <workItem from="1589450280795" duration="3915000" />
       <workItem from="1589620486006" duration="13410000" />
       <workItem from="1589793468453" duration="2229000" />
-      <workItem from="1589880161465" duration="7996000" />
+      <workItem from="1589880161465" duration="8641000" />
+      <workItem from="1589964229265" duration="247000" />
+      <workItem from="1590138756131" duration="593000" />
+      <workItem from="1590399066558" duration="6051000" />
     </task>
     <task id="LOCAL-00001" summary="added gitignore for maven and java">
       <created>1586525482165</created>
@@ -207,7 +234,14 @@
       <option name="project" value="LOCAL" />
       <updated>1589887333754</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="have to fix &#10;do lbl args&#10;&#10;label continue">
+      <created>1589888360347</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1589888360347</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -238,21 +272,26 @@
     <MESSAGE value="still have to dif doStatements, till now changed grammar + added basics of doStatements&#10;TODO: add different loops to grammar" />
     <MESSAGE value="do enddo loop works, still have to add more + fix grammar (names starting with c are ignored)" />
     <MESSAGE value="added GOTO, so that user can create label IF(cond) THEN {body ... GOTO label} ENDIF loop" />
-    <option name="LAST_COMMIT_MESSAGE" value="added GOTO, so that user can create label IF(cond) THEN {body ... GOTO label} ENDIF loop" />
+    <MESSAGE value="have to fix &#10;do lbl args&#10;&#10;label continue" />
+    <option name="LAST_COMMIT_MESSAGE" value="have to fix &#10;do lbl args&#10;&#10;label continue" />
   </component>
   <component name="WindowStateProjectService">
     <state x="696" y="323" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1587309436160">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="696" y="323" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1587309436160" />
-    <state x="765" y="229" key="#com.intellij.ide.util.MemberChooser" timestamp="1589887133258">
+    <state x="765" y="229" key="#com.intellij.ide.util.MemberChooser" timestamp="1590403659357">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="765" y="229" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1589887133258" />
+    <state x="765" y="229" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1590403659357" />
     <state x="641" y="445" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1587736596850">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="641" y="445" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1587736596850" />
+    <state x="756" y="379" width="408" height="288" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1590404181720">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="756" y="379" width="408" height="288" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1920.1040@0.0.1920.1040" timestamp="1590404181720" />
     <state x="756" y="400" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages" timestamp="1587309421282">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -277,46 +316,46 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="851" y="273" key="#xdebugger.XInspectDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1587642462365" />
-    <state x="517" y="116" key="CommitChangelistDialog2" timestamp="1589888349791">
+    <state x="517" y="116" key="CommitChangelistDialog2" timestamp="1589888358937">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="517" y="116" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1589888349791" />
-    <state x="739" y="274" key="FileChooserDialogImpl" timestamp="1588957580449">
+    <state x="517" y="116" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1589888358937" />
+    <state x="739" y="274" key="FileChooserDialogImpl" timestamp="1590407798820">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="739" y="274" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1588957580449" />
-    <state width="1877" height="279" key="GridCell.Tab.0.bottom" timestamp="1589888349809">
+    <state x="739" y="274" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1590407798820" />
+    <state width="1877" height="346" key="GridCell.Tab.0.bottom" timestamp="1590409269019">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="279" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1589888349809" />
-    <state width="1877" height="279" key="GridCell.Tab.0.center" timestamp="1589888349809">
+    <state width="1877" height="346" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1590409269019" />
+    <state width="1877" height="346" key="GridCell.Tab.0.center" timestamp="1590409269019">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="279" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1589888349809" />
-    <state width="1877" height="279" key="GridCell.Tab.0.left" timestamp="1589888349809">
+    <state width="1877" height="346" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1590409269019" />
+    <state width="1877" height="346" key="GridCell.Tab.0.left" timestamp="1590409269019">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="279" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1589888349809" />
-    <state width="1877" height="279" key="GridCell.Tab.0.right" timestamp="1589888349809">
+    <state width="1877" height="346" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1590409269019" />
+    <state width="1877" height="346" key="GridCell.Tab.0.right" timestamp="1590409269019">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="279" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1589888349809" />
-    <state width="1877" height="346" key="GridCell.Tab.1.bottom" timestamp="1589888239667">
+    <state width="1877" height="346" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1590409269019" />
+    <state width="1877" height="346" key="GridCell.Tab.1.bottom" timestamp="1590409270607">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="346" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1589888239667" />
-    <state width="1877" height="346" key="GridCell.Tab.1.center" timestamp="1589888239667">
+    <state width="1877" height="346" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1590409270607" />
+    <state width="1877" height="346" key="GridCell.Tab.1.center" timestamp="1590409270607">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="346" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1589888239667" />
-    <state width="1877" height="346" key="GridCell.Tab.1.left" timestamp="1589888239667">
+    <state width="1877" height="346" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1590409270607" />
+    <state width="1877" height="346" key="GridCell.Tab.1.left" timestamp="1590409270607">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="346" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1589888239667" />
-    <state width="1877" height="346" key="GridCell.Tab.1.right" timestamp="1589888239667">
+    <state width="1877" height="346" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1590409270607" />
+    <state width="1877" height="346" key="GridCell.Tab.1.right" timestamp="1590409270607">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="346" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1589888239667" />
+    <state width="1877" height="346" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1590409270607" />
     <state x="490" y="175" key="Maven.ArtifactSearchDialog" timestamp="1587727680037">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -325,14 +364,14 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="1215" y="242" key="RollbackChangesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1589883193513" />
-    <state x="461" y="162" key="SettingsEditor" timestamp="1589362429798">
+    <state x="461" y="162" key="SettingsEditor" timestamp="1590407805211">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="461" y="162" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1589362429798" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1589629143652">
+    <state x="461" y="162" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1590407805211" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1589888368773">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1589629143652" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1589888368773" />
     <state x="656" y="118" width="607" height="804" key="find.popup" timestamp="1587896799034">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -351,12 +390,12 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/fortran/tools/FPTCreator.java</url>
-          <line>34</line>
+          <line>33</line>
           <option name="timeStamp" value="8" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/fortran/App.java</url>
-          <line>21</line>
+          <line>24</line>
           <option name="timeStamp" value="11" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">

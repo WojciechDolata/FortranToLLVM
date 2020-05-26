@@ -2,20 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0ebe0e8d-b57a-42d9-9ba8-3904fbe59b75" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_base_14.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_base_win_14.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_controls_14.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_controls_win_14.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_graphics_14.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_graphics_win_14.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/fortran/CompilerInstance.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ui/HelloFX.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/sample.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fortran-to-llvm.iml" beforeDir="false" afterPath="$PROJECT_DIR$/fortran-to-llvm.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/fortran/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fortran/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/fortran/tools/FPTCreator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fortran/tools/FPTCreator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ui/HelloFX.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ui/HelloFX.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/sample.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/sample.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -134,7 +123,9 @@
       <workItem from="1589880161465" duration="8641000" />
       <workItem from="1589964229265" duration="247000" />
       <workItem from="1590138756131" duration="593000" />
-      <workItem from="1590399066558" duration="6051000" />
+      <workItem from="1590399066558" duration="6218000" />
+      <workItem from="1590409734311" duration="168000" />
+      <workItem from="1590486262246" duration="2238000" />
     </task>
     <task id="LOCAL-00001" summary="added gitignore for maven and java">
       <created>1586525482165</created>
@@ -241,7 +232,14 @@
       <option name="project" value="LOCAL" />
       <updated>1589888360347</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="added UI in javaFX">
+      <created>1590409550409</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1590409550409</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -273,7 +271,8 @@
     <MESSAGE value="do enddo loop works, still have to add more + fix grammar (names starting with c are ignored)" />
     <MESSAGE value="added GOTO, so that user can create label IF(cond) THEN {body ... GOTO label} ENDIF loop" />
     <MESSAGE value="have to fix &#10;do lbl args&#10;&#10;label continue" />
-    <option name="LAST_COMMIT_MESSAGE" value="have to fix &#10;do lbl args&#10;&#10;label continue" />
+    <MESSAGE value="added UI in javaFX" />
+    <option name="LAST_COMMIT_MESSAGE" value="added UI in javaFX" />
   </component>
   <component name="WindowStateProjectService">
     <state x="696" y="323" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1587309436160">
@@ -316,46 +315,46 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="851" y="273" key="#xdebugger.XInspectDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1587642462365" />
-    <state x="517" y="116" key="CommitChangelistDialog2" timestamp="1589888358937">
+    <state x="517" y="116" key="CommitChangelistDialog2" timestamp="1590409547258">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="517" y="116" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1589888358937" />
+    <state x="517" y="116" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1590409547258" />
     <state x="739" y="274" key="FileChooserDialogImpl" timestamp="1590407798820">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="739" y="274" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1590407798820" />
-    <state width="1877" height="346" key="GridCell.Tab.0.bottom" timestamp="1590409269019">
+    <state width="1877" height="213" key="GridCell.Tab.0.bottom" timestamp="1590488471682">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="346" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1590409269019" />
-    <state width="1877" height="346" key="GridCell.Tab.0.center" timestamp="1590409269019">
+    <state width="1877" height="213" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1590488471682" />
+    <state width="1877" height="213" key="GridCell.Tab.0.center" timestamp="1590488471682">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="346" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1590409269019" />
-    <state width="1877" height="346" key="GridCell.Tab.0.left" timestamp="1590409269019">
+    <state width="1877" height="213" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1590488471682" />
+    <state width="1877" height="213" key="GridCell.Tab.0.left" timestamp="1590488471682">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="346" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1590409269019" />
-    <state width="1877" height="346" key="GridCell.Tab.0.right" timestamp="1590409269019">
+    <state width="1877" height="213" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1590488471682" />
+    <state width="1877" height="213" key="GridCell.Tab.0.right" timestamp="1590488471682">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="346" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1590409269019" />
-    <state width="1877" height="346" key="GridCell.Tab.1.bottom" timestamp="1590409270607">
+    <state width="1877" height="213" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1590488471682" />
+    <state width="1877" height="346" key="GridCell.Tab.1.bottom" timestamp="1590409571246">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="346" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1590409270607" />
-    <state width="1877" height="346" key="GridCell.Tab.1.center" timestamp="1590409270607">
+    <state width="1877" height="346" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1590409571246" />
+    <state width="1877" height="346" key="GridCell.Tab.1.center" timestamp="1590409571246">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="346" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1590409270607" />
-    <state width="1877" height="346" key="GridCell.Tab.1.left" timestamp="1590409270607">
+    <state width="1877" height="346" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1590409571246" />
+    <state width="1877" height="346" key="GridCell.Tab.1.left" timestamp="1590409571246">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="346" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1590409270607" />
-    <state width="1877" height="346" key="GridCell.Tab.1.right" timestamp="1590409270607">
+    <state width="1877" height="346" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1590409571246" />
+    <state width="1877" height="346" key="GridCell.Tab.1.right" timestamp="1590409571246">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="346" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1590409270607" />
+    <state width="1877" height="346" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1590409571246" />
     <state x="490" y="175" key="Maven.ArtifactSearchDialog" timestamp="1587727680037">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -368,10 +367,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="461" y="162" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1590407805211" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1589888368773">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1590409812953">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1589888368773" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1590409812953" />
     <state x="656" y="118" width="607" height="804" key="find.popup" timestamp="1587896799034">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

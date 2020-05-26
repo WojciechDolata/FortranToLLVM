@@ -51,9 +51,9 @@ public class HelloFX extends Application {
             try {
                 String fileName;
                 if(outputDirectory != null) {
-                    fileName = outputDirectory.getAbsolutePath() + "/" + file.getName().replace(".f", ".llm");
+                    fileName = outputDirectory.getAbsolutePath() + "/" + file.getName().replace(".f", ".ll");
                 } else {
-                    fileName = file.getParent() + "/" + file.getName().replace(".f", ".llm");
+                    fileName = file.getParent() + "/" + file.getName().replace(".f", ".ll");
                 }
                 BufferedWriter writer = new BufferedWriter(new FileWriter(fileName));
                 writer.write(program);
